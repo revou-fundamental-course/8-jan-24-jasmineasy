@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* color palette */
+:root {
+    --primary: #B1C381;
+    --accent: #9BB8CD;
+    --secondary: #EEC759;
+    --text-light: #faf8f4;
+    --text-dark: #0F0F0F;
+    --background: #f1f0e9;
+    --white: #fff;
+    --black: #222;
+}
+
+* {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background);
+}
+
+/* Header */
+header {
+    background-color: var(--primary);
+    padding: 24px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1.5px solid var(--text-dark);
+}
+
+.header-title {
+    color: var(--text-light);
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.header-title h1 {
+    margin-right: 12px;
+}
+
+/* Main Content */
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+.highlight {
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+    text-decoration-thickness: 4px;
+    color: var(--secondary);
+    -webkit-text-stroke: 2px var(--text-dark);
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin: 24px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin:16px;
+    color: var(--text-dark);
+}
+
+.container h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+#calculator-box {
+    border: 1.5px solid var(--text-dark);
+    border-radius: 30px;
+    text-align: center;
+
+}
+
+.container-title {
+    margin: 0;
+    padding: 12px 0 12px 0;
+    background-color: var(--primary);
+    border-radius: 30px 30px 0 0;
+    height: auto;
+    color: var(--text-dark);
+    border-bottom: 1.5px solid var(--text-dark);
+}
+
+.container-switch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1.5px solid var(--text-dark);
+}
+
+.container-switch button {
+    cursor: pointer;
+    width: 50%;
+}
+
+.container-switch .btn-luas {
+    border-right:  1.5px solid var(--text-dark);
+}
+
+.container-panel {
+    background-color: var(--white);
+    border-bottom: 1.5px solid var(--text-dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formula {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.formula p  {
+    margin-bottom: 8px;
+}
+
+.btn-luas, .btn-keliling {
+    background: none;
+    border: none;
+    padding: 8px 16px;
+}
+
+.container-calculator {
+    margin: 28px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textfield {
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+input {
+    padding: 16px 16px;
+    border-radius: 8px;
+    border: 1.5px solid var(--text-dark);
+    outline: none;
+    margin-bottom: 8px;
+}
+
+input:focus {
+    border: 1.5px solid var(--primary)
+}
+
+.btn-hitung, .btn-reset {
+    padding: 12px 16px;
+    margin-top:8px;
+    margin-bottom: 8pxpx;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.btn-hitung {
+    background-color: var(--secondary);
+    border: 1.5px solid var(--text-dark);
+}
+
+.btn-hitung:hover {
+    background-color: #eeba2c;
+    cursor: pointer;
+}
+
+.btn-reset {
+    background-color:transparent;
+    border: 1.5px solid var(--text-dark);
+   
+}
+
+.btn-reset:hover {
+    background-color:#cecdc7;
+    cursor: pointer;
+}
+
+.result {
+    padding: 16px;
+    margin: 8px;
+}

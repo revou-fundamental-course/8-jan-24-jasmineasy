@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/index.js" defer></script>
+    <title>Katik</title>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="header-title">
+        <h1 class="highlight">Katik</h1>
+        <h3>| Kalkulator Matematik</h3>
+    </div>
+</header>
+
+<!-- content -->
+<main>
+    <section class="section">
+        <article class="container">
+            <h1>WELCOME TO <span class="highlight">KATIK! </span>⋆⁺₊✧</h1>
+            <p>Katik merupakan sebuah aplikasi berbasis web yang berfungsi untuk menghitung luas dan keliling bangun datar.</p>
+        </article>
+        
+        <article class="container" id="calculator-box">
+            <div class="container-title">
+                <h3>Kalkulator Luas Persegi</h3>
+            </div>
+            
+            <div class="container-switch">
+                <button class="btn-luas">Hitung Luas</button>
+                <button class="btn-keliling">Hitung Keliling</button>
+            </div>
+            <!-- Luas -->
+            <div class="container-content" id="calculator-luas">
+                <div class="container-panel">
+                    <img src="img/Persegi.png" alt="">
+                    <div class="formula">
+                        <p><b>Rumus Luas Persegi</b></p>
+                        <p>Luas = Sisi x Sisi</p>
+                    </div>
+                </div>
+                <div class="container-calculator">
+                    <input type="number" name="input" id="number1" placeholder="Masukkan panjang sisi (cm)">
+                    <div class="result-box">
+                    </div>
+                    <button class="btn-hitung" onclick="calcLuas()">Hitung</button>
+                    <button class="btn-reset" onclick="resetResult('resultLuas');">Reset</button>
+                </div>
+            </div>
+             <!-- Keliling -->
+             <div class="container-content" id="calculator-keliling">
+                <div class="container-panel">
+                    <img src="img/Persegi.png" alt="">
+                    <div class="formula">
+                        <p><b>Rumus Keliling Persegi</b></p>
+                        <p>Luas = 4 x Sisi</p>
+                    </div>
+                </div>
+                <div class="container-calculator">
+                    <input type="number" name="input" id="number2" placeholder="Masukkan panjang sisi (cm)">
+                    <div class="result-box-2">
+                    </div>
+                    <button class="btn-hitung" onclick="calcKeliling()">Hitung</button>
+                    <button class="btn-reset"  onclick="resetResult('resultKeliling');">Reset</button>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+
+<!-- footer -->
+<footer>
+</footer>
+    
+</body>
+</html>
