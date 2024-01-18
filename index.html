@@ -12,7 +12,7 @@
 <!-- Header -->
 <header>
     <div class="header-title">
-        <h1 class="highlight">Katik</h1>
+        <h1>Katik</h1>
         <h3>| Kalkulator Matematik</h3>
     </div>
 </header>
@@ -26,16 +26,16 @@
         </article>
         
         <article class="container" id="calculator-box">
-            <div class="container-title">
+            <section class="container-title">
                 <h3>Kalkulator Luas Persegi</h3>
-            </div>
+            </section>
             
-            <div class="container-switch">
+            <section class="container-switch">
                 <button class="btn-luas">Hitung Luas</button>
                 <button class="btn-keliling">Hitung Keliling</button>
-            </div>
-            <!-- Luas -->
-            <div class="container-content" id="calculator-luas">
+            </section>
+            <!-- Luas Card -->
+            <section class="container-content" id="calculator-luas">
                 <div class="container-panel">
                     <img src="img/Persegi.png" alt="">
                     <div class="formula">
@@ -50,9 +50,9 @@
                     <button class="btn-hitung" onclick="calcLuas()">Hitung</button>
                     <button class="btn-reset" onclick="resetResult('resultLuas');">Reset</button>
                 </div>
-            </div>
-             <!-- Keliling -->
-             <div class="container-content" id="calculator-keliling">
+            </section>
+             <!-- Keliling Card -->
+             <section class="container-content" id="calculator-keliling">
                 <div class="container-panel">
                     <img src="img/Persegi.png" alt="">
                     <div class="formula">
@@ -67,13 +67,19 @@
                     <button class="btn-hitung" onclick="calcKeliling()">Hitung</button>
                     <button class="btn-reset"  onclick="resetResult('resultKeliling');">Reset</button>
                 </div>
-            </div>
+             </section>
         </article>
     </section>
 </main>
 
 <!-- footer -->
 <footer>
+    <p>&copy; 2024 All rights reserved.</p>
+    <p>Find me on</p>
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/asyifaniaa/" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/jasmine.asy/" target="_blank">Instagram</a>
+    </div>
 </footer>
     
 </body>

@@ -1,16 +1,16 @@
-// content
+// content var
 const luasBox = document.getElementById("calculator-luas");
 const kelilingBox = document.getElementById("calculator-keliling");
 const titleBox = document.querySelector(".container-title h3");
 const inputs = document.querySelectorAll("input");
 
-// button
+// button var
 const switchLuas = document.querySelector(".btn-luas");
 const switchKeliling = document.querySelector(".btn-keliling");
 const btnCalc = document.querySelector(".btn-hitung");
 const btnReset = document.querySelector(".btn-reset");
 
-// default display
+// default display settings
 luasBox.style.display = "block";
 kelilingBox.style.display = "none";
 highlightButton(switchLuas);

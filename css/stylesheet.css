@@ -43,6 +43,12 @@ header {
 
 .header-title h1 {
     margin-right: 12px;
+    -webkit-text-stroke: 1.5px var(--text-dark);
+    color: var(--secondary);
+}
+
+.header-title h3 {
+    -webkit-text-stroke: 1px var(--text-dark);
 }
 
 /* Main Content */
@@ -198,4 +204,34 @@ input:focus {
 .result {
     padding: 16px;
     margin: 8px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: var(--primary);
+    padding: 24px;
+    height: 60px;
+    font-size: 16px;
+    border-top: 1.5px solid var(--text-dark);
+}
+
+footer p {
+    margin-bottom: 4px;
+}
+
+.social-media {
+    margin-top: 8px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: underline;
+    color: #333;
+    font-size: 16px;
+}
+
+.social-media a:hover {
+    color: var(--text-light);
 }
